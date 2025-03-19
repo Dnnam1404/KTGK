@@ -1,0 +1,155 @@
+/* Reset các margin, padding cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Màu nền xám nhạt */
+    color: #333; /* Chữ màu đen */
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+.navbar {
+    background-color: #1a1a1a; /* Màu nền navbar đen */
+    padding: 12px 18px;
+}
+
+.navbar-brand {
+    font-size: 1.7em;
+    font-weight: 600;
+    color: #ffffff; /* Chữ màu trắng */
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 18px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Chữ màu trắng */
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #3399ff; /* Xanh dương cho link đang active */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+h2 {
+    font-size: 1.9em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Chữ màu đen */
+}
+
+.table {
+    background-color: #ffffff; /* Bảng nền trắng */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho bảng */
+    overflow: hidden;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Màu nền xám nhạt cho dòng lẻ */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e6e6e6; /* Màu xám nhạt khi hover */
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.table th {
+    background-color: #1a1a1a; /* Màu đen cho tiêu đề bảng */
+    color: #ffffff; /* Chữ trắng */
+    font-size: 1.05em;
+    text-transform: uppercase;
+}
+
+.table td img {
+    max-width: 90px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #3399ff; /* Xanh dương cho nút */
+    border: none;
+    font-size: 1em;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1a73e8; /* Xanh dương đậm khi hover */
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+.btn-warning {
+    background-color: #ff9800; /* Màu cam cho nút warning */
+    border-color: #ff9800;
+}
+
+.btn-warning:hover {
+    background-color: #e68900; /* Nút warning khi hover */
+}
+
+.btn-info {
+    background-color: #17a2b8; /* Màu xanh lá nhạt cho nút info */
+    border-color: #17a2b8;
+}
+
+.btn-info:hover {
+    background-color: #138496; /* Xanh đậm khi hover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Màu đỏ cho nút danger */
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Đỏ đậm khi hover */
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .table th, .table td {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
